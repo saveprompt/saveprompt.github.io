@@ -1,0 +1,178 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { languages, getLocalizedPath } from '../i18n';
+import type { Translations } from '../i18n';
+import '../styles/global.css';
+
+interface Props {
+  lang: string;
+  translations: Translations;
+}
+
+const { lang, translations } = Astro.props;
+const siteUrl = 'https://saveprompt.github.io';
+const canonicalUrl = `${siteUrl}${getLocalizedPath(lang, '/')}`;
+---
+
+<!doctype html>
+<html lang={lang} class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FCF0DA" />
+
+    <!-- Technical SEO & Meta -->
+    <title>{translations.meta.title}</title>
+    <meta name="description" content={translations.meta.description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="SavePrompt" />
+
+    <!-- Google tag (gtag.js) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5EW9FEW56"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y5EW9FEW56');
+    </script>
+
+    <!-- Hreflang Tags for all 7 languages -->
+    {languages.map((l) => (
+      <link rel="alternate" hreflang={l.code} href={`${siteUrl}${getLocalizedPath(l.code, '/')}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={translations.meta.ogTitle || translations.meta.title} />
+    <meta property="og:description" content={translations.meta.ogDescription || translations.meta.description} />
+    <meta property="og:site_name" content="SavePrompt" />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:secure_url" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="SavePrompt — Minimalist AI Prompt Saver PWA" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={translations.meta.ogTitle || translations.meta.title} />
+    <meta name="twitter:description" content={translations.meta.ogDescription || translations.meta.description} />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <meta name="twitter:image:alt" content="SavePrompt — Minimalist AI Prompt Saver PWA" />
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SavePrompt" />
+
+    <!-- Service Worker Registration -->
+    <script is:inline src="/registerSW.js"></script>
+
+    <!-- Preconnect / Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-[#FCF0DA] text-[#4C4541] dark:bg-[#4C4541] dark:text-[#FCF0DA] antialiased selection:bg-[#F2C46A] selection:text-[#4C4541] transition-colors duration-200">
+    <Navbar lang={lang} translations={translations} />
+
+    <main class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <slot />
+    </main>
+
+    <Footer translations={translations} />
+
+    <!-- Client-side script for Theme Toggle & PWA prompt -->
+    <script is:inline>
+      (function() {
+        // 1. Theme Management
+        function applyTheme(isDark) {
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+          const themeColor = isDark ? '#4C4541' : '#FCF0DA';
+          const metaTheme = document.querySelector('meta[name="theme-color"]');
+          if (metaTheme) metaTheme.setAttribute('content', themeColor);
+
+          // Update toggle button icons
+          const sunIcon = document.querySelector('.icon-sun');
+          const moonIcon = document.querySelector('.icon-moon');
+          if (sunIcon && moonIcon) {
+            if (isDark) {
+              sunIcon.classList.remove('hidden');
+              moonIcon.classList.add('hidden');
+            } else {
+              sunIcon.classList.add('hidden');
+              moonIcon.classList.remove('hidden');
+            }
+          }
+        }
+
+        const storedTheme = localStorage.getItem('saveprompt_theme');
+        const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initialDark = storedTheme ? storedTheme === 'dark' : systemPrefersDark;
+        applyTheme(initialDark);
+
+        document.addEventListener('DOMContentLoaded', () => {
+          applyTheme(document.documentElement.classList.contains('dark'));
+
+          const themeBtn = document.getElementById('theme-toggle');
+          if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+              const isDark = !document.documentElement.classList.contains('dark');
+              localStorage.setItem('saveprompt_theme', isDark ? 'dark' : 'light');
+              applyTheme(isDark);
+            });
+          }
+        });
+
+        // 2. PWA beforeinstallprompt handler
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+          e.preventDefault();
+          deferredPrompt = e;
+          const pwaBtn = document.getElementById('pwa-install-btn');
+          if (pwaBtn) {
+            pwaBtn.classList.remove('hidden');
+            pwaBtn.classList.add('inline-flex');
+            pwaBtn.addEventListener('click', async () => {
+              if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const choiceResult = await deferredPrompt.userChoice;
+                if (choiceResult.outcome === 'accepted') {
+                  pwaBtn.classList.add('hidden');
+                  pwaBtn.classList.remove('inline-flex');
+                }
+                deferredPrompt = null;
+              }
+            });
+          }
+        });
+
+        window.addEventListener('appinstalled', () => {
+          const pwaBtn = document.getElementById('pwa-install-btn');
+          if (pwaBtn) {
+            pwaBtn.classList.add('hidden');
+            pwaBtn.classList.remove('inline-flex');
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

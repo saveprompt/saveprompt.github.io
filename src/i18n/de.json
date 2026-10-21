@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "SavePrompt | Minimalistischer KI-Prompt-Speicher",
+    "description": "KI-Prompts sofort speichern, organisieren und kopieren. 100% offline, privat und kostenlos. Kein Konto erforderlich.",
+    "ogTitle": "SavePrompt — KI-Prompts Sofort Speichern",
+    "ogDescription": "Ein kostenloses Offline-Tool zum Speichern und Organisieren deiner KI-Prompts. Funktioniert auf jedem Gerät."
+  },
+  "nav": {
+    "home": "Startseite",
+    "support": "Unterstützen",
+    "installApp": "App Installieren",
+    "lightMode": "Heller Modus",
+    "darkMode": "Dunkler Modus",
+    "language": "Sprache"
+  },
+  "app": {
+    "heading": "Speichere deine KI-Prompts",
+    "subheading": "Speichere, organisiere und kopiere deine besten Prompts sofort. 100% privat & offline.",
+    "promptPlaceholder": "Füge deinen Prompt hier ein oder tippe ihn...",
+    "tagPlaceholder": "Tags hinzufügen (kommagetrennt)",
+    "saveButton": "Speichern",
+    "searchPlaceholder": "Prompts durchsuchen...",
+    "copyButton": "Kopieren",
+    "copiedButton": "Kopiert!",
+    "deleteButton": "Löschen",
+    "exportButton": "JSON Exportieren",
+    "importButton": "JSON Importieren",
+    "emptyState": "Noch keine Prompts gespeichert. Füge oben deinen ersten Prompt hinzu!",
+    "noResults": "Keine Prompts entsprechen deiner Suche.",
+    "promptSaved": "Prompt gespeichert!",
+    "promptDeleted": "Prompt gelöscht.",
+    "exportSuccess": "Prompts erfolgreich exportiert!",
+    "importSuccess": "Prompts erfolgreich importiert!",
+    "confirmDelete": "Bist du sicher, dass du diesen Prompt löschen möchtest?",
+    "allTags": "Alle",
+    "charactersCount": "Zeichen"
+  },
+  "pwa": {
+    "installTitle": "SavePrompt Installieren",
+    "installDescription": "Füge SavePrompt zu deinem Startbildschirm hinzu für sofortigen Offline-Zugriff.",
+    "installButton": "Installieren",
+    "dismissButton": "Nicht jetzt"
+  },
+  "footer": {
+    "tagline": "Mit ♥ für die KI-Community gemacht",
+    "privacy": "100% Privat — Alle Daten bleiben auf deinem Gerät",
+    "support": "Unterstütze den Entwickler"
+  },
+  "seo": {
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq1q": "Was ist SavePrompt?",
+    "faq1a": "SavePrompt ist eine kostenlose, minimalistische Web-App, mit der du KI-Prompts speichern, organisieren und schnell kopieren kannst. Sie funktioniert vollständig in deinem Browser – ohne Konto oder Server.",
+    "faq2q": "Funktioniert SavePrompt offline?",
+    "faq2a": "Ja! SavePrompt ist eine Progressive Web App (PWA). Installiere sie auf deinem Gerät und nutze sie jederzeit, auch ohne Internetverbindung.",
+    "faq3q": "Sind meine Daten privat?",
+    "faq3a": "Absolut. Alle Prompts werden lokal auf deinem Gerät im localStorage deines Browsers gespeichert. Es werden niemals Daten an einen Server gesendet.",
+    "faq4q": "Kann ich meine gespeicherten Prompts exportieren?",
+    "faq4a": "Ja. Verwende die Schaltfläche JSON Exportieren, um jederzeit ein Backup aller gespeicherten Prompts herunterzuladen.",
+    "howToTitle": "So verwendest du SavePrompt",
+    "howToStep1": "Tippe oder füge deinen KI-Prompt in das Textfeld ein",
+    "howToStep2": "Füge optional Tags hinzu, um deinen Prompt zu organisieren",
+    "howToStep3": "Klicke auf Speichern, um ihn lokal zu speichern",
+    "howToStep4": "Verwende die Kopieren-Schaltfläche, um jeden gespeicherten Prompt sofort zu kopieren"
+  }
+}

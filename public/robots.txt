@@ -1,0 +1,7 @@
+# SavePrompt — https://saveprompt.github.io
+# Allow all crawlers
+
+User-agent: *
+Allow: /
+
+Sitemap: https://saveprompt.github.io/sitemap-index.xml

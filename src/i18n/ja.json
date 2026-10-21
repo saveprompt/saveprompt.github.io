@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "SavePrompt | ミニマリストAIプロンプト保存ツール",
+    "description": "AIプロンプトを瞬時に保存、整理、コピー。100%オフライン、プライベート、無料。アカウント不要。",
+    "ogTitle": "SavePrompt — AIプロンプトを瞬時に保存",
+    "ogDescription": "AIプロンプトを保存・整理できる無料のオフラインツール。あらゆるデバイスで動作します。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "support": "サポート",
+    "installApp": "アプリをインストール",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "language": "言語"
+  },
+  "app": {
+    "heading": "AIプロンプトを保存しよう",
+    "subheading": "お気に入りのプロンプトを瞬時に保存、整理、コピー。100%プライベート＆オフライン。",
+    "promptPlaceholder": "プロンプトをここに貼り付けまたは入力...",
+    "tagPlaceholder": "タグを追加（カンマ区切り）",
+    "saveButton": "保存",
+    "searchPlaceholder": "プロンプトを検索...",
+    "copyButton": "コピー",
+    "copiedButton": "コピー完了！",
+    "deleteButton": "削除",
+    "exportButton": "JSONエクスポート",
+    "importButton": "JSONインポート",
+    "emptyState": "まだプロンプトが保存されていません。上のエリアから最初のプロンプトを追加しましょう！",
+    "noResults": "検索に一致するプロンプトがありません。",
+    "promptSaved": "プロンプトを保存しました！",
+    "promptDeleted": "プロンプトを削除しました。",
+    "exportSuccess": "プロンプトのエクスポートに成功しました！",
+    "importSuccess": "プロンプトのインポートに成功しました！",
+    "confirmDelete": "このプロンプトを削除してもよろしいですか？",
+    "allTags": "すべて",
+    "charactersCount": "文字"
+  },
+  "pwa": {
+    "installTitle": "SavePromptをインストール",
+    "installDescription": "ホーム画面にSavePromptを追加して、オフラインでも即座にアクセスできます。",
+    "installButton": "インストール",
+    "dismissButton": "後で"
+  },
+  "footer": {
+    "tagline": "AIコミュニティのために♥を込めて作りました",
+    "privacy": "100%プライベート — すべてのデータはお使いのデバイスに保存されます",
+    "support": "開発者をサポート"
+  },
+  "seo": {
+    "faqTitle": "よくある質問",
+    "faq1q": "SavePromptとは何ですか？",
+    "faq1a": "SavePromptは、AIプロンプトを保存、整理、すばやくコピーできる無料のミニマリストWebアプリです。アカウントやサーバーは不要で、ブラウザ上で完全に動作します。",
+    "faq2q": "SavePromptはオフラインで使えますか？",
+    "faq2a": "はい！SavePromptはプログレッシブウェブアプリ（PWA）です。デバイスにインストールすれば、インターネット接続がなくてもいつでもご利用いただけます。",
+    "faq3q": "データのプライバシーは守られますか？",
+    "faq3a": "もちろんです。すべてのプロンプトはブラウザのlocalStorageを使用してデバイス上にローカル保存されます。データがサーバーに送信されることは一切ありません。",
+    "faq4q": "保存したプロンプトをエクスポートできますか？",
+    "faq4a": "はい。JSONエクスポートボタンを使用して、保存済みのすべてのプロンプトのバックアップをいつでもダウンロードできます。",
+    "howToTitle": "SavePromptの使い方",
+    "howToStep1": "テキストエリアにAIプロンプトを入力または貼り付けます",
+    "howToStep2": "必要に応じてタグを追加してプロンプトを整理します",
+    "howToStep3": "保存ボタンをクリックしてローカルに保存します",
+    "howToStep4": "コピーボタンを使って保存済みのプロンプトを瞬時にコピーします"
+  }
+}

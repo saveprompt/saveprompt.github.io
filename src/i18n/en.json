@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "SavePrompt | Minimalist AI Prompt Saver",
+    "description": "Save, organize, and copy AI prompts instantly. 100% offline, private, and free. No account needed.",
+    "ogTitle": "SavePrompt — Save AI Prompts Instantly",
+    "ogDescription": "A free, offline-first tool to save and organize your AI prompts. Works on any device."
+  },
+  "nav": {
+    "home": "Home",
+    "support": "Support",
+    "installApp": "Install App",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "language": "Language"
+  },
+  "app": {
+    "heading": "Save Your AI Prompts",
+    "subheading": "Instantly save, organize, and copy your best prompts. 100% private & offline.",
+    "promptPlaceholder": "Paste or type your prompt here...",
+    "tagPlaceholder": "Add tags (comma-separated)",
+    "saveButton": "Save",
+    "searchPlaceholder": "Search your prompts...",
+    "copyButton": "Copy",
+    "copiedButton": "Copied!",
+    "deleteButton": "Delete",
+    "exportButton": "Export JSON",
+    "importButton": "Import JSON",
+    "emptyState": "No prompts saved yet. Start by adding your first prompt above!",
+    "noResults": "No prompts match your search.",
+    "promptSaved": "Prompt saved!",
+    "promptDeleted": "Prompt deleted.",
+    "exportSuccess": "Prompts exported successfully!",
+    "importSuccess": "Prompts imported successfully!",
+    "confirmDelete": "Are you sure you want to delete this prompt?",
+    "allTags": "All",
+    "charactersCount": "characters"
+  },
+  "pwa": {
+    "installTitle": "Install SavePrompt",
+    "installDescription": "Add SavePrompt to your home screen for instant offline access.",
+    "installButton": "Install",
+    "dismissButton": "Not now"
+  },
+  "footer": {
+    "tagline": "Made with ♥ for the AI community",
+    "privacy": "100% Private — All data stays on your device",
+    "support": "Support the Developer"
+  },
+  "seo": {
+    "faqTitle": "Frequently Asked Questions",
+    "faq1q": "What is SavePrompt?",
+    "faq1a": "SavePrompt is a free, minimalist web app that lets you save, organize, and quickly copy AI prompts. It works entirely in your browser with no account or server needed.",
+    "faq2q": "Does SavePrompt work offline?",
+    "faq2a": "Yes! SavePrompt is a Progressive Web App (PWA). Install it on your device and use it anytime, even without an internet connection.",
+    "faq3q": "Is my data private?",
+    "faq3a": "Absolutely. All prompts are stored locally on your device using your browser's localStorage. No data is ever sent to any server.",
+    "faq4q": "Can I export my saved prompts?",
+    "faq4a": "Yes. Use the Export JSON button to download a backup of all your saved prompts at any time.",
+    "howToTitle": "How to use SavePrompt",
+    "howToStep1": "Type or paste your AI prompt into the text area",
+    "howToStep2": "Optionally add tags to organize your prompt",
+    "howToStep3": "Click Save to store it locally",
+    "howToStep4": "Use the Copy button to instantly copy any saved prompt"
+  }
+}

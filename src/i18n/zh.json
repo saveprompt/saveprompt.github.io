@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "SavePrompt | 极简AI提示词保存工具",
+    "description": "即时保存、整理和复制AI提示词。100%离线、隐私、免费。无需注册账号。",
+    "ogTitle": "SavePrompt — 即时保存AI提示词",
+    "ogDescription": "一款免费的离线工具，用于保存和整理你的AI提示词。支持任何设备。"
+  },
+  "nav": {
+    "home": "首页",
+    "support": "支持",
+    "installApp": "安装应用",
+    "lightMode": "浅色模式",
+    "darkMode": "深色模式",
+    "language": "语言"
+  },
+  "app": {
+    "heading": "保存你的AI提示词",
+    "subheading": "即时保存、整理和复制你最好的提示词。100%隐私且离线可用。",
+    "promptPlaceholder": "在此粘贴或输入你的提示词...",
+    "tagPlaceholder": "添加标签（用逗号分隔）",
+    "saveButton": "保存",
+    "searchPlaceholder": "搜索你的提示词...",
+    "copyButton": "复制",
+    "copiedButton": "已复制！",
+    "deleteButton": "删除",
+    "exportButton": "导出JSON",
+    "importButton": "导入JSON",
+    "emptyState": "还没有保存的提示词。从上方添加你的第一个提示词开始吧！",
+    "noResults": "没有匹配搜索的提示词。",
+    "promptSaved": "提示词已保存！",
+    "promptDeleted": "提示词已删除。",
+    "exportSuccess": "提示词导出成功！",
+    "importSuccess": "提示词导入成功！",
+    "confirmDelete": "你确定要删除这个提示词吗？",
+    "allTags": "全部",
+    "charactersCount": "字符"
+  },
+  "pwa": {
+    "installTitle": "安装SavePrompt",
+    "installDescription": "将SavePrompt添加到主屏幕，即可离线即时访问。",
+    "installButton": "安装",
+    "dismissButton": "以后再说"
+  },
+  "footer": {
+    "tagline": "用♥为AI社区打造",
+    "privacy": "100%隐私 — 所有数据保存在你的设备上",
+    "support": "支持开发者"
+  },
+  "seo": {
+    "faqTitle": "常见问题",
+    "faq1q": "什么是SavePrompt？",
+    "faq1a": "SavePrompt是一款免费、极简的网页应用，可以让你保存、整理和快速复制AI提示词。它完全在浏览器中运行，无需账号或服务器。",
+    "faq2q": "SavePrompt可以离线使用吗？",
+    "faq2a": "可以！SavePrompt是一款渐进式网页应用（PWA）。安装到你的设备上，即使没有网络连接也能随时使用。",
+    "faq3q": "我的数据是否安全私密？",
+    "faq3a": "绝对安全。所有提示词都通过浏览器的localStorage保存在你的设备本地。任何数据都不会发送到任何服务器。",
+    "faq4q": "我可以导出保存的提示词吗？",
+    "faq4a": "可以。使用导出JSON按钮，随时下载所有已保存提示词的备份。",
+    "howToTitle": "如何使用SavePrompt",
+    "howToStep1": "在文本区域输入或粘贴你的AI提示词",
+    "howToStep2": "可选择添加标签来整理你的提示词",
+    "howToStep3": "点击保存按钮将其本地存储",
+    "howToStep4": "使用复制按钮即时复制任何已保存的提示词"
+  }
+}

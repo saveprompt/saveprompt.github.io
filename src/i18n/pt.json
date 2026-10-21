@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "title": "SavePrompt | Salve seus Prompts de IA",
+    "description": "Salve, organize e copie prompts de IA instantaneamente. 100% offline, privado e gratuito. Sem necessidade de conta.",
+    "ogTitle": "SavePrompt — Salve Prompts de IA Instantaneamente",
+    "ogDescription": "Uma ferramenta gratuita e offline para salvar e organizar seus prompts de IA. Funciona em qualquer dispositivo."
+  },
+  "nav": {
+    "home": "Início",
+    "support": "Apoiar",
+    "installApp": "Instalar App",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Escuro",
+    "language": "Idioma"
+  },
+  "app": {
+    "heading": "Salve seus Prompts de IA",
+    "subheading": "Salve, organize e copie seus melhores prompts instantaneamente. 100% privado e offline.",
+    "promptPlaceholder": "Cole ou digite seu prompt aqui...",
+    "tagPlaceholder": "Adicionar tags (separadas por vírgula)",
+    "saveButton": "Salvar",
+    "searchPlaceholder": "Pesquisar seus prompts...",
+    "copyButton": "Copiar",
+    "copiedButton": "Copiado!",
+    "deleteButton": "Excluir",
+    "exportButton": "Exportar JSON",
+    "importButton": "Importar JSON",
+    "emptyState": "Nenhum prompt salvo ainda. Comece adicionando seu primeiro prompt acima!",
+    "noResults": "Nenhum prompt corresponde à sua pesquisa.",
+    "promptSaved": "Prompt salvo!",
+    "promptDeleted": "Prompt excluído.",
+    "exportSuccess": "Prompts exportados com sucesso!",
+    "importSuccess": "Prompts importados com sucesso!",
+    "confirmDelete": "Tem certeza de que deseja excluir este prompt?",
+    "allTags": "Todos",
+    "charactersCount": "caracteres"
+  },
+  "pwa": {
+    "installTitle": "Instalar SavePrompt",
+    "installDescription": "Adicione o SavePrompt à sua tela inicial para acesso offline instantâneo.",
+    "installButton": "Instalar",
+    "dismissButton": "Agora não"
+  },
+  "footer": {
+    "tagline": "Feito com ♥ para a comunidade de IA",
+    "privacy": "100% Privado — Todos os dados permanecem no seu dispositivo",
+    "support": "Apoie o Desenvolvedor"
+  },
+  "seo": {
+    "faqTitle": "Perguntas Frequentes",
+    "faq1q": "O que é o SavePrompt?",
+    "faq1a": "SavePrompt é um aplicativo web gratuito e minimalista que permite salvar, organizar e copiar rapidamente prompts de IA. Funciona inteiramente no seu navegador, sem necessidade de conta ou servidor.",
+    "faq2q": "O SavePrompt funciona offline?",
+    "faq2a": "Sim! O SavePrompt é um Aplicativo Web Progressivo (PWA). Instale-o no seu dispositivo e use a qualquer momento, mesmo sem conexão com a internet.",
+    "faq3q": "Meus dados são privados?",
+    "faq3a": "Com certeza. Todos os prompts são armazenados localmente no seu dispositivo usando o localStorage do navegador. Nenhum dado é enviado para qualquer servidor.",
+    "faq4q": "Posso exportar meus prompts salvos?",
+    "faq4a": "Sim. Use o botão Exportar JSON para baixar um backup de todos os seus prompts salvos a qualquer momento.",
+    "howToTitle": "Como usar o SavePrompt",
+    "howToStep1": "Digite ou cole seu prompt de IA na área de texto",
+    "howToStep2": "Opcionalmente, adicione tags para organizar seu prompt",
+    "howToStep3": "Clique em Salvar para armazená-lo localmente",
+    "howToStep4": "Use o botão Copiar para copiar instantaneamente qualquer prompt salvo"
+  }
+}
